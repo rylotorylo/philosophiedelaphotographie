@@ -1,0 +1,699 @@
+
+
+
+
+
+
+/* On stocke tous les libellés, entre deux crochets, dans la "première colonne" d'une table. On les appelle "libelle"            */
+/* On met un + pour indiquer que le libellé est extensible et de premier niveau"              						             */
+/* On met un ++ pour indiquer que le libellé est extensible et de deuxième niveau"                       					     */
+/* On met un +++ pour indiquer que le libellé est extensible et de troisième niveau"                     						 */
+/* On met un - pour indiquer que le libellé n'est PAS extensible et de premier niveau"                 							 */
+/* On met un -- pour indiquer que le libellé n'est PAS extensible et de deuxième niveau"               							 */
+/* On met un --- pour indiquer que le libellé n'est PAS extensible et de troisième niveau"               						 */
+
+
+const libelle_Navi=
+[
+
+
+"+ANTHROPOGENIE ACCUEIL", 														/* 01______ Accueil */
+
+	"--Anthropogenie - Page principale",													/* 0101____ Anthropogenie - Page principale*/
+	"--Recherche",																			/* 0102____ Recherche - Search */
+	"--Glossaire", 																			/* 0103____ Glossaire - Glossary */
+	"--Résumés",  																			/* 0104____ Résumés - Summaries */
+
+	"--Accès thématiques",  																/* 0105____ Thématiques - Themes */
+/* 			"--Anthropogeny",  																/* 0106____ Anthropogeny */
+	"--Téléchargements",			  														/* 0107____ Téléchargements - Downloads */
+	"--Articles",  																			/* 0108____ Articles */
+
+	"--Evénements (Sorbonne 2019)",  														/* 0109____ Evénements (Sorbonne 2019) */
+	"--Vidéos - Audio - Photos",  															/* 0110____ Vidéos - Audio - Photos */
+	"--Livres",  																			/* 0111____ Livres - Books */
+	"--Ancien accueil - Former home page",  												/* 0112____ Ancien accueil - Former home page */	
+	"--Contact",							  												/* 0113____ Contact */	
+
+
+
+
+
+"+ANTHROPOGENIE GENERALE", 														/* 02______ Anthropogénie générale */
+
+	"++Les tables", 																		/* 0200____ Les tables */
+		"---Table systématique", 																		/* 020001__ Table systématique */
+		"---Table alphabétique", 																		/* 020002__ Table alphabétique */
+
+	"++Les bases", 																			/* 0201____ Les bases */
+		"---Ch01 - Corps technique et sémiotique", 														/* 020101__ Ch01 - Corps technique et sémiotique */
+		"---Ch02 - Un cerveau endotropique",															/* 020102__ Ch02 - Un cerveau endotropique */
+		"---Ch03 - La rencontre",																		/* 020103__ Ch03 - La rencontre */
+		"---Ch04 - Les indices",																		/* 020104__ Ch04 - Les indices */
+		"---Ch05 - Les index",																			/* 020105__ Ch05 - Les index */
+		"---Ch06 - La possibilisation",																	/* 020106__ Ch06 - La possibilisation */
+		"---Ch07 - Les effets de champ", 																/* 020107__ Ch07 - Les effets de champ */
+		"---Ch08 - La distinction fonctionnements / présence",											/* 020108__ Ch08 - La distinction fonctionnements / présence */
+		"---Ch09 - Les images massives",																/* 020109__ Ch09 - Les images massives */
+		"---Ch10 - Les musiques et langages massifs",													/* 020110__ Ch10 - Les musiques et langages massifs */
+		"---Ch11 - L'articulation du spécimen hominien",												/* 020111__ Ch11 - L'articulation du spécimen hominien */
+
+	"++Les accomplissements fondamentaux",													/* 0202____ Les accomplissements fondamentaux */
+		"---Ch12 - Les trois MONDES", 																	/* 020201__ Ch12 - Les trois MONDES */
+		"---Ch13 - Les tectures (architectures, mobiliers)",											/* 020202__ Ch13 - Les tectures (architectures, mobiliers) */
+		"---Ch14 - Les images détaillées",																/* 020203__ Ch14 - Les images détaillées */
+		"---Ch15 - Les musiques détaillées",															/* 020204__ Ch15 - Les musiques détaillées */
+		"---Ch16 - Les dialectes quant à leurs éléments",												/* 020205__ Ch16 - Les dialectes quant à leurs éléments */
+		"---Ch17 - Les dialectes quant à leur pratique",												/* 020206__ Ch17 - Les dialectes quant à leur pratique */
+
+	"++Les accomplissements subséquents",													/* 0203____ Les accomplissements subséquents */
+		"---Ch18 - Les écritures", 																		/* 020301__ Ch18 - Les écritures */
+		"---Ch19 - Les mathématiques",																	/* 020302__ Ch19 - Les mathématiques */
+		"---Ch20 - Les logiques",																		/* 020303__ Ch20 - Les logiques */
+		"---Ch21 - Les théories de choses (Philo et Sciences)",											/* 020304__ Ch21 - Les théories de choses (Philo et Sciences) */
+		"---Ch22 - Les théories d'Homo du fait de ses langages",										/* 020305__ Ch22 - Les théories d'Homo du fait de ses langages */
+		"---Ch23 - Les théories d'Homo urgentes",														/* 020306__ Ch23 - Les théories d'Homo urgentes */
+		"---Ch24 - Les théories d'Homo contemplatives", 												/* 020307__ Ch24 - Les théories d'Homo contemplatives */	
+	
+	"++Les articulations sociales",														    /* 0204____ Les accomplissements subséquents */	
+		"---Ch25 - L'ethos hominien", 																	/* 020401__ Ch25 - L'ethos hominien */
+		"---Ch26 - Les maladies",																		/* 020402__ Ch26 - Les maladies */
+		"---Ch27 - Les vies",																			/* 020403__ Ch27 - Les vies */
+		"---Ch28 - Les ethnies",																		/* 020404__ Ch28 - Les ethnies */
+		"---Ch29 - Les époques",																		/* 020405__ Ch29 - Les époques */
+		"---Ch30 - La galaxie des X-mêmes",																/* 020406__ Ch30 - La galaxie des X-mêmes */
+	
+	
+	
+	
+
+"+ANTHROPOGENIES LOCALES",  													/* 03______ Anthropogénies locales */
+	"++Ontologie",																			/* 0301____ Ontologie */
+		"---De la métaphysique à l'anthropogénie",														/* 030101__ De la métaphysique à l'anthropogénie */
+		"---Les philosophies du temps",																	/* 030102__ Les philosophies du temps*/
+		"---La présence dans la conscience chez Sartre",												/* 030103__ La présence dans la conscience chez Sartre*/		
+		"---De l'individu aux individuations (Simondon)",												/* 030104__ De l'individu aux individuations (Simondon)*/		
+		
+	"++Sémiotique",																			/* 0302____ Sémiotique */
+		"---Les arts de l'espace",																		/* 030201__ Les arts de l'espace */
+		"---L'intention sexuelle",																		/* 030202__ L'intention sexuelle */
+		"---Signe et symbole dans l'acte sexuel",														/* 030203__ Signe et symbole dans l'acte sexuel */
+		"---Mathématique et sexualité",																	/* 030204__ Mathématique et sexualité */
+		"---L'animal signé",																			/* 030205__ L'animal signé */
+		"---Théorie sémiotique de la crise",															/* 030206__ Théorie sémiotique de la crise */
+		"---Apprentissage et horizon",																	/* 030207__ Apprentissage et horizon*/
+		"---L'anthropologie de la publicité",															/* 030208__ L'anthropologie de la publicité*/
+		"---Le Bruxellois ce sémiologue né",															/* 030209__ Le Bruxellois ce sémiologue né */
+		"---Le concert des médias",																		/* 030210__ Le concert des médias */
+		"---Philosophie de la photographie",															/* 030211__ Philosophie de la photographie 1983*/
+		"---Le non-acte photographique",																/* 030212__ Le non-acte photographique*/
+		"---L'anthropologie du cadre",																	/* 030213__ L'anthropologie du cadre */
+		"---La rhétorique des index",																	/* 030214__ La rhétorique des index */
+		"---La bande dessinée, une cosmogonie dure",													/* 030215__ La bande dessinée, une cosmogonie dure */
+		"---Tintin ou la collecte du monde (Hergé)",													/* 030216__ Tintin ou la collecte du monde (Hergé) */
+		"---Harzach ou les noms de Dieu (Moebius)",														/* 030217__ "Harzach" ou les noms de Dieu (Moebius) */
+		"---Indices et index dans les Adages d'Erasme",													/* 030218__ Indices et index dans les Adages d'Erasme */
+
+	"++Linguistique",																		/* 0303____ Linguistique */
+		"---Deux textes de synthèse",																	/* 030300__ Deux textes de synthèse */
+		"---Linguistique anthropogénique et phonosémie mallarméenne",									/* 030301__ Linguistique anthropogénique et phonosémie mallarméenne */
+		"---Littérature extrême (17e siècle)",															/* 030302__ Littérature extrême (17e siècle) 1977 */
+		"---Logiques de dix langues indo-européennes",													/* 030303__ Logiques de dix langues indo-européennes */
+		"---Logiques de cinq langues européennes (radio)",												/* 030304__ Logiques de cinq langues européennes (radio) */
+
+	"++Phylogénèse",																		/* 0304____ Phylogénèse */
+		"---Priorité de la technique : Le nouvel âge",													/* 030401__ Priorité de la technique : Le nouvel âge */
+		"---La mathématisation de la flèche",															/* 030402__ La mathématisation de la flèche */
+		"---Les trois moments de l'objet",																/* 030403__ Les trois moments de l'objet*/
+		"---Cinquante opérateurs du Monde 3",															/* 030404__ Cinquante "opérateurs" du Monde 3 */
+		"---Les nouvelles chances de l'humanisme",														/* 030405__ Les nouvelles chances de l'humanisme */
+		"---Culture et industrie : le design",															/* 030406__ Culture et industrie : le design */
+		"---Architecture synergique",																	/* 030407__ Architecture synergique */
+		"---Sourire, rire et esprit-humour européen",													/* 030408__ Sourire, rire et esprit-humour européen */
+		"---De labour à work",																			/* 030409__ De "labour" à "work" */
+		"---Histoire photographique de la photographie",												/* 030410__ Histoire photographique de la photographie */
+		"---Histoire langagière de la littérature française (radio)",									/* 030411__ Histoire langagière de la littérature française */		
+
+	"++Cosmogonies contemporaines",															/* 0305____ Cosmogonies contemporaines */
+		"---Introduction : Cosmogonie vs cosmologie",													/* 030501__ Introduction : Cosmogonie vs cosmologie */
+		"---Photo digitale : Genèse selon Vinci (Baudier)",												/* 030502__ Photo digitale : Genèse selon Vinci (Baudier) */
+		"---Bande dessinée : Le blanc quantique, 1905 (McCay)",											/* 030503__ Bande dessinée : Le blanc quantique, 1905 (McCay) */
+		"---Musique, danse, théâtre, tectures : Reséquenciations (De Mey)",								/* 030504__ Musique, danse, théâtre, tectures : Reséquenciations (De Mey) */
+		"---Photo analogique : Corps Célestes (Radisic)",												/* 030505__ Photo analogique : Corps Célestes (Radisic) */
+		"---Littérature : Zelsa, l'univers dans le dos (Eranvil)",										/* 030506__ Littérature : Zelsa, l'univers dans le dos (Eranvil) */
+		"---Peinture : Formations vivantes (Micheline Lo)",												/* 030507__ Peinture : Formations vivantes (Micheline Lo) */
+
+	"++Encyclopaedia Universalis",															/* 0306____ Encyclopaedia Universalis */
+		"---Architecture (Espace architectural)",														/* 030601__ Architecture (Espace architectural) */
+		"---Chromo, Kitsch, Laid",																		/* 030602__ Chromo, Kitsch, Laid */
+		"---Design (Les esthétiques industrielles)",													/* 030603__ Design (Les esthétiques industrielles) */
+		"---Esthétique",																				/* 030604__ Esthétique */
+		"---Expériences esthétiques",																	/* 030605__ Expériences esthétiques */
+		"---Peinture",																					/* 030606__ Peinture */		
+		"---Espace pictural",																			/* 030607__ Espace pictural */
+		"---Plaisir",																					/* 030608__ Plaisir */
+		"---Sculpture ",																				/* 030609__ Sculpture  */
+		"---Espace sculptural",																			/* 030610__ Espace sculptural */
+		"---Sexualité humaine (introduction)",															/* 030611__ Sexualité humaine (introduction) */
+		"---Zoopsychologie (Ethologie, avec Jean-Louis Laroche)",										/* 030612__ Zoopsychologie (Ethologie, avec Jean-Louis Laroche) */	
+
+
+
+
+
+	"+ANTHROPOGENIES - ANNEXES",  												/* 04______ Anthropogénies - Annexes */
+		"--L'auteur",																		/* 0401____ L'auteur */
+		"--Biographie",																		/* 0402____ Biographie */
+		"--Wikipédia",																		/* 0403____ Wikipedia */
+		"--Tour de l'homme en quatre-vingts thèses",										/* 0404____ Tour de l'homme en quatre-vingts thèses  */
+		"--Limites et ouvertures du système (Post-scriptum)",								/* 0405____ Limites et ouvertures du système (Post-scriptum) */
+
+];
+
+
+
+
+/* On stocke tous les liens entre "libellés" et pages HTML dans la "deuxième colonne" de cette table. On les appelle "lien_page" */
+/* Il faut donc imaginer que le système charge 
+		la première VARIABLE (libellé) dans la première colonne d'une table
+		la deuxième VARIABLE (lien_page) dans la deuxième colonne de la même table
+    Pour que la correspondance entre le "libellé" et le "lien" puisse se faire, il faut que la liste des "liens" soit IDENTIQUE à la séquence de la liste des "libellés"
+	Pour s'y retrourer nous avons ajouté des commentaires numérotés à droite de l'écran
+	Ces commentaires numérotés sont identiques pour les deux listes de VARIABLES  */
+
+
+
+
+
+const lien_page_Navi=
+[
+
+
+"", 																			/* 01______ Accueil */
+
+
+	"http://www.anthropogenie.com/main.html",												/* 0101____ Anthropogenie - Page principale*/
+	"http://www.anthropogenie.com/search_fr.html",												/* 0102____ Recherche - Search */
+	"http://www.anthropogenie.com/glossaire.html",											/* 0103____ Glossaire - Glossary */
+	"http://www.anthropogenie.com/resumes.html", 											/* 0104____ Résumés - Summaries */
+
+	"http://www.anthropogenie.com/themes.html", 											/* 0105____ Thématiques - Themes */
+/* 			"http://www.anthropogenie.com/main_en.html",  									/* 0106____ Anthropogeny */
+	"http://www.anthropogenie.com/downloads.html", 											/* 0107____ Téléchargements - Downloads */
+	"http://www.anthropogenie.com/articles.html",											/* 0108____ Articles */
+
+	"http://www.anthropogenie.com/events.html",  											/* 0109____ Evénements (Sorbonne 2019) */
+	"http://www.anthropogenie.com/photo_video_audio.html",  								/* 0110____ Vidéos - Audio - Photos */
+	"http://www.anthropogenie.com/books.html",  											/* 0111____ Livres - Books */
+	"http://www.anthropogenie.com/accueil.html",  											/* 0112____ Ancien accueil - Former home page */	
+	"http://www.anthropogenie.com/fondation.html",								  			/* 0113____ Contact */	
+
+
+
+
+
+"", 																			/* 02______ Anthropogénie générale */
+
+	"", 																					/* 0200____ Les tables */
+		"http://www.anthropogenie.com/anthropogenie_gene/systematic.html", 								/* 020001__ Table systématique */
+		"http://www.anthropogenie.com/anthropogenie_gene/alphabetic.html", 								/* 020002__ Table alphabétique */
+
+	"", 																					/* 0201____ Les bases */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch1.html", 									/* 020101__ Ch01 - Corps technique et sémiotique */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch2.html",										/* 020102__ Ch02 - Un cerveau endotropique */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch3.html",										/* 020103__ Ch03 - La rencontre */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch4.html",										/* 020104__ Ch04 - Les indices */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch5.html",										/* 020105__ Ch05 - Les index */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch6.html",										/* 020106__ Ch06 - La possibilisation */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch7.html", 									/* 020107__ Ch07 - Les effets de champ */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch8.html",										/* 020108__ Ch08 - La distinction fonctionnements / présence */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch9.html",										/* 020109__ Ch09 - Les images massives */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch10.html",									/* 020110__ Ch10 - Les musiques et langages massifs */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch11.html",									/* 020111__ Ch11 - L'articulation du spécimen hominien */
+
+	"",																						/* 0202____ Les accomplissements fondamentaux */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch12.html", 									/* 020201__ Ch12 - Les trois MONDES */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch13.html",									/* 020202__ Ch13 - Les tectures (architectures, mobiliers) */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch14.html",									/* 020203__ Ch14 - Les images détaillées */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch15.html",									/* 020204__ Ch15 - Les musiques détaillées */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch16.html",									/* 020205__ Ch16 - Les dialectes quant à leurs éléments */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch17.html",									/* 020206__ Ch17 - Les dialectes quant à leur pratique */
+
+	"",																						/* 0203____ Les accomplissements subséquents */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch18.html", 									/* 020301__ Ch18 - Les écritures */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch19.html",									/* 020302__ Ch19 - Les mathématiques */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch20.html",									/* 020303__ Ch20 - Les logiques */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch21.html",									/* 020304__ Ch21 - Les théories de choses (Philo et Sciences) */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch22.html",								/* 020305__ Ch22 - Les théories d'Homo du fait de ses langages */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch23.html",									/* 020306__ Ch23 - Les théories d'Homo urgentes */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch24.html",									/* 020307__ Ch24 - Les théories d'Homo contemplatives */	
+	
+	"",																					    /* 0204____ Les accomplissements subséquents */	
+		"http://www.anthropogenie.com/anthropogenie_gene/ch25.html",									/* 020401__ Ch25 - L'ethos hominien */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch26.html",									/* 020402__ Ch26 - Les maladies */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch27.html",									/* 020403__ Ch27 - Les vies */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch28.html",									/* 020404__ Ch28 - Les ethnies */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch29.html",									/* 020405__ Ch29 - Les époques */
+		"http://www.anthropogenie.com/anthropogenie_gene/ch30.html",									/* 020406__ Ch30 - La galaxie des X-mêmes */
+	
+	
+
+
+
+"",  																			/* 03______ Anthropogénies locales */
+	"",																						/* 0301____ Ontologie */
+		"http://www.anthropogenie.com/anthropogenie_locale/ontologie/metaphysique.htm",	    			/* 030101__ De la métaphysique à l'anthropogénie */
+		"http://www.anthropogenie.com/anthropogenie_locale/ontologie/philodutemps.htm", 				/* 030102__ Les philosophies du temps*/
+		"http://www.anthropogenie.com/anthropogenie_locale/ontologie/sartre.htm",		    			/* 030103__ La présence dans la conscience chez Sartre*/		
+		"http://www.anthropogenie.com/anthropogenie_locale/ontologie/simondon.htm",						/* 030104__ De l'individu aux individuations (Simondon)*/		
+		
+	"",																						/* 0302____ Sémiotique */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/al_arts_espace.html",				/* 030201__ Les arts de l'espace */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/intention_sexuelle.htm",			/* 030202__ L'intention sexuelle */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/acte_sexuel.html",				/* 030203__ Signe et symbole dans l'acte sexuel */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/mathematique_sexualite.html",		/* 030204__ Mathématique et sexualité */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/semio_animal_signe.html",			/* 030205__ L'animal signé */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/theorie_semiotique_crise.htm",	/* 030206__ Théorie sémiotique de la crise */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/apprentissage_horizon.htm",		/* 030207__ Apprentissage et horizon*/
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/anthropologie_publicite.htm",		/* 030208__ L'anthropologie de la publicité*/
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/bruxellois.htm",					/* 030209__ Le Bruxellois ce sémiologue né */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/concert_medias.htm",				/* 030210__ Le concert des médias */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/al_semiotique_philo.html",		/* 030211__ Philosophie de la photographie 1983*/
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/non_acte_photographique.htm",		/* 030212__ Le non-acte photographique*/
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/anthropologie_cadre.htm",			/* 030213__ L'anthropologie du cadre */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/rhetorique_index.htm",			/* 030214__ La rhétorique des index */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/bande_dessinee.htm",				/* 030215__ La bande dessinée, une cosmogonie dure */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/herge.htm",						/* 030216__ Tintin ou la collecte du monde (Hergé) */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/harzach.htm",						/* 030217__ "Harzach" ou les noms de Dieu (Moebius) */
+		"http://www.anthropogenie.com/anthropogenie_locale/semiotique/erasme.html",						/* 030218__ Indices et index dans les Adages d'Erasme */
+
+	"",																									/* 0303____ Linguistique */
+		"http://www.anthropogenie.com/anthropogenie_locale/linguistique/deux_textes_synthese_linguistique.html",	/* 030300__ Deux textes de synthèse */
+		"http://www.anthropogenie.com/anthropogenie_locale/linguistique/phonosemie.html",							/* 030301__ Linguistique anthropogénique et phonosémie mallarméenne */
+		"http://www.anthropogenie.com/anthropogenie_locale/linguistique/al_linguistique_extreme.html",				/* 030302__ Littérature extrême (17e siècle) 1977 */
+		"http://www.anthropogenie.com/anthropogenie_locale/linguistique/al_linguistique_europeenne.html",			/* 030303__ Logiques de dix langues indo-européennes */
+		"http://www.anthropogenie.com/anthropogenie_locale/linguistique/cinq_langues.html",							/* 030304__ Logiques de cinq langues européennes (radio) */
+
+	"",																						/* 0304____ Phylogénèse */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/nouvel_age.htm",					/* 030401__ Priorité de la technique : Le nouvel âge */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/mathematisation.htm",			/* 030402__ La mathématisation de la flèche */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/moments_objet.htm",				/* 030403__ Les trois moments de l'objet*/
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/cinqante_ope.htm",				/* 030404__ Cinquante "opérateurs" du Monde 3 */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/chance_humanisme.htm",			/* 030405__ Les nouvelles chances de l'humanisme */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/culture_industrie.htm",			/* 030406__ Culture et industrie : le design */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/architecture_synergique.htm",	/* 030407__ Architecture synergique */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/humour.htm",						/* 030408__ Sourire, rire et esprit-humour européen */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/economie.htm",					/* 030409__ De "labour" à "work" */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/al_semiotique_hpp.html",			/* 030410__ Histoire photographique de la photographie */
+		"http://www.anthropogenie.com/anthropogenie_locale/phylogenese/histoire_langagiere.html",		/* 030411__ Histoire langagière de la littérature française */		
+
+	"",																						/* 0305____ Cosmogonies contemporaines */
+		"http://www.anthropogenie.com/anthropogenie_locale/sujets_d_oeuvre/intro_gonies.htm",			/* 030501__ Introduction : Cosmogonie vs cosmologie */
+		"http://www.anthropogenie.com/anthropogenie_locale/sujets_d_oeuvre/baudier.htm",				/* 030502__ Photo digitale : Genèse selon Vinci (Baudier) */
+		"http://www.anthropogenie.com/anthropogenie_locale/sujets_d_oeuvre/nemo.htm",					/* 030503__ Bande dessinée : Le blanc quantique, 1905 (McCay) */
+		"http://www.anthropogenie.com/anthropogenie_locale/sujets_d_oeuvre/sequentiels.htm",			/* 030504__ Musique, danse, théâtre, tectures : Reséquenciations (De Mey) */
+		"http://www.anthropogenie.com/anthropogenie_locale/sujets_d_oeuvre/radisic.htm",				/* 030505__ Photo analogique : Corps Célestes (Radisic) */
+		"http://www.anthropogenie.com/anthropogenie_locale/sujets_d_oeuvre/zelsa.htm",					/* 030506__ Littérature : Zelsa, l'univers dans le dos (Eranvil) */
+		"http://www.anthropogenie.com/anthropogenie_locale/sujets_d_oeuvre/lo.htm",						/* 030507__ Peinture : Formations vivantes (Micheline Lo) */
+
+	"",																						/* 0306____ Encyclopaedia Universalis */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/espace_architectural.htm",		/* 030601__ Architecture (Espace architectural) */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/al_universalis_chromo.html",		/* 030602__ Chromo, Kitsch, Laid */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/esthetique_industrielle.htm",	/* 030603__ Design (Les esthétiques industrielles) */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/esthetique.htm",					/* 030604__ Esthétique */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/experiences_esthetiques.htm",	/* 030605__ Expériences esthétiques */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/peinture.htm",					/* 030606__ Peinture */		
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/espace_pictural.htm",			/* 030607__ Espace pictural */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/plaisir.htm",					/* 030608__ Plaisir */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/sculpture.htm",					/* 030609__ Sculpture  */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/espace_sculptural.htm",			/* 030610__ Espace sculptural */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/sexualite.htm",					/* 030611__ Sexualité humaine (introduction) */
+		"http://www.anthropogenie.com/anthropogenie_locale/universalis/al_universalis_zoospychologie.html",			/* 030612__ Zoopsychologie (Ethologie, avec Jean-Louis Laroche) */	
+
+
+
+
+
+	"",  																		/* 04______ Anthropogénies - Annexes */
+		"http://www.anthropogenie.com/anthropogenie_gene/auteur.html",						/* 0401____ L'auteur */
+		"http://www.anthropogenie.com/anthropogenie_gene/biographie_vanlier.html",			/* 0402____ Biographie */
+		"https://fr.wikipedia.org/wiki/Henri_Van_Lier",										/* 0403____ Wikipedia */
+		"http://www.anthropogenie.com/anthropogenie_succinte/theses.htm",					/* 0404____ Tour de l'homme en quatre-vingts thèses  */
+		"http://www.anthropogenie.com/limites_ouvertures/limites_ouvertures.html",			/* 0405____ Limites et ouvertures du système (Post-scriptum) */
+			
+			
+			
+			
+			
+];
+
+
+
+
+
+/* On définit une variable NIVEAU, qui nous dit à quel NIVEAU on se trouve le dernier libellé affiché par l'algorithme */
+/* On démarre au niveau 1 */
+
+var niveau_Navi=1;
+
+
+
+
+
+/* On définit la feuille de style du MENU  */
+
+document.write 	("<style>.soustable_Navi {display:none;}"+
+				 "       .bouton_Navi    {vertical-align:top}"+
+				 "       .menu_Navi      {position:fixed; top:10px; left:2%; max-height:95%; height:auto; width:21%; background: #F5F5F5; overflow-y:auto;}"+
+				 "td {height:20px;}" +
+	"@media (min-width: 1001px) {.menu_Navi{display:block;}}" +
+	"@media (max-width: 1000px) {.BoutonTel{\n" +
+	"        position:fixed;\n" +
+	"        top:25px;\n" +
+	"        left:25px;\n" +
+	"        width:70px;\n" +
+	"        height:70px;\n" +
+	"        background: #F5F5F5;\n" +
+	"        box-shadow:0 0 5px black;\n" +
+	"        border-radius:25%;\n" +
+	"        z-index:9999;\n" +
+	"        display: flex;\n" +
+	"        flex-direction:column;\n" +
+	"        justify-content:center;\n" +
+	"        align-items:center;\n" +
+	"    }\n" +
+	"    .barre1{\n" +
+	"        position:absolute;\n" +
+	"        width:55px;\n" +
+	"        height:8px;\n" +
+	"        border-radius:4px;\n" +
+	"        margin:5%;\n" +
+	"        background:grey;\n" +
+	"        border:1px solid black;\n" +
+	"        transition:0.5s;\n" +
+	"        top:7px;\n" +
+	"    }\n" +
+	"    .barre2{\n" +
+	"        position:absolute;\n" +
+	"        width:55px;\n" +
+	"        height:8px;\n" +
+	"        border-radius:4px;\n" +
+	"        margin:5%;\n" +
+	"        background:grey;\n" +
+	"        border:1px solid black;\n" +
+	"        top:26px;\n" +
+	"        transition:0.5s;\n" +
+	"    }\n" +
+	"    .barre3{\n" +
+	"        position:absolute;\n" +
+	"        width:55px;\n" +
+	"        height:8px;\n" +
+	"        border-radius:4px;\n" +
+	"        margin:5%;\n" +
+	"        background:grey;\n" +
+	"        border:1px solid black;\n" +
+	"        top:45px;\n" +
+	"        transition:0.5s;\n" +
+	"    }\n" +
+	"    .menu_Navi{\n" +
+	"        position:fixed;\n" +
+	"        display:none;\n" +
+	"        top:0;\n" +
+	"        left:0;\n" +
+	"        width:100vw;\n" +
+	"        height:100vh;\n" +
+	"        max-height:100vh;\n" +
+	"        z-index:9998;\n" +
+
+	"    }}"+
+				 "</style>"
+				);
+
+                        /* display:none => Je n'affiche pas PAR DEFAUT */
+                        /* vertical-align => Pour le bouton qui s'affiche à gauche de chaque libellé extensible */
+                        /* position => Pour que le menu ne bouge jamais */
+                        /* top => Distance du bord de l'écran */
+                        /* max-heigth => pour la hauteur maximum du menu dans l'écran */
+                        /* heigth => pour la hauteur du menu dans l'écran */
+                        /* width => pour la largeur du menu dans l'écran */
+                        /* background => pour la couleur du fond du menu */
+                        /* overflow => pour avoir un ascenseur à droite du menu */
+						/* td (height:20px => pour avoir hauteur de lignes constantes */
+
+
+document.write("<div class=\"BoutonTel\" onclick='showMenu()'>" +
+	"<div class='barre1'></div>" +
+	"<div class='barre2'></div>" +
+	"<div class='barre3'></div>" +
+	"</div>");
+
+/* On écrit la DIVISION dans laquelle on va écrire le MENU. Il fautune DIV pour avoir un ascenseur */
+
+
+document.write ("<div class=\"menu_Navi\">");    /* On écrit la division, qu'on va remplir plus tard */
+
+
+
+
+
+
+
+
+
+
+/* On écrit (dans la page HTML) les lignes de TITRE du MENU */
+/* On écrit (dans la page HTML) les lignes de TITRE du MENU */
+/* On écrit (dans la page HTML) les lignes de TITRE du MENU */
+
+
+document.write ("<div class=\"txt_Navi_01\"><br><br>PLAN DU SITE<br><br></div>" )
+
+document.write ("<div class=\"txt1\"> &nbsp;&nbsp;Cliquer sur les triangles</div>" )
+
+document.write ("<div class=\"txt1\"> &nbsp;&nbsp;Puis sur un libellé<br><br></div>" )
+
+
+
+
+
+
+
+
+
+/* On écrit le CONTENU du MENU dans la a DIVISION qu'on vient de créer */
+
+document.write ("<table>");                      /* On écrit une table dans la DIVISION */
+
+
+/* On fait une boucle qui parcoure tous les "libellés" */
+
+
+for(let i=0; i<libelle_Navi.length; i=i+1)                      /* L'index "i" va parcourir toute la table des libellés */
+																/* L'index "i" augmente de 1 à chaque boucle */
+																/* L'index "i" ne peut pas dépasser la taille de libelle_Navi */
+																/* L'index "i+1" pour augmenter i de 1 à cahque boucle */
+
+
+/* Voici la boucle. Elle est sensible aux + et aux - en début de chaque libellé */
+/* On ne récupère que les libellés extensibles (ayant un ou plusieurs +) */
+
+{
+if (libelle_Navi [i].substr(0,5).match(new RegExp("\\+","g"))!==null)
+								/* Pour ne récupérer que les 5 premiers caractères du libelle_Navi */
+								/* match pour tester si il y a des + au début du libellé (maximum 5) */
+								/* Le g pour trouver tous les + et pas simpelemnt le premier */
+								/* Si il n'y a aucun +, alors le résultat est "null". Donc on ne récupère rien */	
+	{while (libelle_Navi [i].substr(0,5).match(new RegExp("\\+","g")).length<niveau_Navi)
+		{document.write ("</table>");
+		 document.write ("</td>");   /* On ferme avant d'ouvrir plus tard */
+		 document.write ("</tr>");   /* On ferme avant d'ouvrir plus tard */
+		 niveau_Navi=niveau_Navi-1   /* Quand on ferme le menu */
+		}
+	niveau_Navi=libelle_Navi [i].substr(0,5).match(new RegExp("\\+","g")).length;   	/* On récupère le niveau où on se trouve */  
+	document.write ("<tr>\n");       													/* On a ouvert une ligne TR dans la table */		
+	document.write ("<td class=\"bouton_Navi\" id="+i+"><div>&#x1F53B;</div></td>\n");  /* On a créé un bouton qui ouvre ou ferme un libellé avec un triangle rouge &#x1F53B;  */	
+	document.write ("<td>")																/* On ouvre une cellule où on stockera le lien et le libellé  */
+		if (lien_page_Navi [i]!=="") 
+			{document.write("<a href=\""+ lien_page_Navi [i]+"\">"); 					/* On vérifie l'existence d'un lien pour le libellé */  
+			}
+		document.write ("<span class=\"txt1\">"+libelle_Navi [i].substr (niveau_Navi)+"</span>"); 						/* On écrit le libellé */  
+		if (lien_page_Navi [i]!=="") 
+			{document.write("</a>"); 													/* On écrit la fermeture du line </a> */  
+			}
+		document.write ("<table class=\"soustable_Navi\">");							/* On a la table qui contient le niveau d'après */  
+	}																					/* On a fini le cas où le libellé commence par des + */  				
+
+else
+
+	{while (libelle_Navi [i].substr(0,5).match(new RegExp("-","g")).length<niveau_Navi)
+		{document.write ("</table>");
+		 document.write ("</td>");   /* On ferme avant d'ouvrir plus tard */
+		 document.write ("</tr>");   /* On ferme avant d'ouvrir plus tard */
+		 niveau_Navi=niveau_Navi-1   /* Quand on ferme le menu */
+		}
+	niveau_Navi=libelle_Navi [i].substr(0,5).match(new RegExp("-","g")).length;   		/* On récupère le niveau où on se trouve */  
+	document.write ("<tr>\n");       													/* On a ouvert une ligne TR dans la table */		
+	document.write ("<td></td>\n");  													/* On garde un TD pour conserver l'alignement des libellés  */	
+	document.write ("<td>")																/* On ouvre une cellule où on stockera le lien et le libellé  */
+		if (lien_page_Navi [i]!=="") 
+			{document.write("<a href=\""+ lien_page_Navi [i]+"\">"); 					/* On vérifie l'existence d'un lien pour le libellé */  
+			}
+		document.write (libelle_Navi [i].substr (niveau_Navi)); 						/* On écrit le libellé */  
+		if (lien_page_Navi [i]!=="") 
+			{document.write("</a>"); 													/* On écrit la fermeture du line </a> */  
+			}
+		document.write ("</td>");														/* On ferme TD */  
+		document.write ("</tr>");														/* On ferme TR */  
+	}																					/* On a fini le cas où le libellé commence par des - */
+}  																							
+
+while (1<niveau_Navi)																	/* Pour être sûr qu'on a bine tout fermé */  								
+		{document.write ("</table>");
+		 document.write ("</td>");   /* On ferme avant d'ouvrir plus tard */
+		 document.write ("</tr>");   /* On ferme avant d'ouvrir plus tard */
+		 niveau_Navi=niveau_Navi-1   /* Quand on ferme le menu */
+		}
+		
+document.write ("</table></div>");														/* On ferme la table et la DIV */ 
+
+
+
+
+
+
+
+/* A ce stade on a écrit notre PLAN DU SITE en haut de la page HTML affichée pour l'utilisateur */
+
+
+var picto_Navi=document.getElementsByClassName ("bouton_Navi"); 						/* Parcoure toutes les lignes de la page HTML (dont les lignes rajoutées par le script */ 
+
+for(let i=0; i<picto_Navi.length; i=i+1)                     				/* L'index "i" va parcourir toute la liste préparée dans l'instruction précédente */
+																			/* L'index "i" augmente de 1 à chaque boucle */
+																			/* L'index "i" ne peut pas dépasser la taille de libelle_Navi */
+																			/* L'index "i+1" pour augmenter i de 1 à chaque boucle */
+
+{
+picto_Navi [i].childNodes.item(0).style.transform="rotate(-90deg)";   		/* On redresse tous nos pictos, initialement pointé vers le bas */
+
+
+
+
+picto_Navi [i].addEventListener ("click",()=>   							/* On ajoute une instruction qui surveille les clics sur picto_Navi */ 
+
+
+
+{
+console.log(picto_Navi [i].parentNode.childNodes.item(3).childNodes)	
+if (getComputedStyle(picto_Navi [i].parentNode.childNodes.item(3).childNodes.item(1)).display!=="none")     /* On utilise le item_Navi initialisé ci-dessus */ 
+{picto_Navi [i].parentNode.childNodes.item(3).childNodes.item(1).style.display="none";
+picto_Navi [i].childNodes.item(0).style.transform="rotate(-90deg)";   		/* On redresse tous nos pictos, initialement pointé vers le bas */
+eraseCookie (picto_Navi [i].id);
+}
+else
+{picto_Navi [i].parentNode.childNodes.item(3).childNodes.item(1).style.display="block";
+picto_Navi [i].childNodes.item(0).style.transform="rotate(0deg)";   		/* On rétabli le picto vers le bas */
+createCookie (picto_Navi [i].id);
+}
+}
+);
+
+
+
+
+/* Ci-dessous je lis les cookies créés pour conserver l'état du MENU (PLAN DU SITE) et le remettre dans le même état */
+/* Ci-dessous je lis les cookies créés pour conserver l'état du MENU (PLAN DU SITE) et le remettre dans le même état */
+/* Ci-dessous je lis les cookies créés pour conserver l'état du MENU (PLAN DU SITE) et le remettre dans le même état */
+
+
+if (readCookie (picto_Navi [i].id))											/* On regarde si l'utilisateur avait ouvert ce menu dans la dernière page */
+{
+picto_Navi [i].click ();													/* On regarde si l'utilisateur avait ouvert ce menu dans la dernière page */									
+}	
+}
+
+
+/* On crée les trois fonctions COOKIES */
+
+
+function createCookie (name,valeur_Navi)
+{
+var expire_Navi="";
+
+document.cookie=name+"="+valeur_Navi+expire_Navi+"; path=/";               /* On crée un cookie sur la machine de l'utilisateur */		
+}
+
+function readCookie (name)													/* Je découpe la chaine de caractère du COOKIE, en deux champs */		
+{
+const name_Navi=name+"=";
+const cookie_Navi=document.cookie.split (";");
+for(let i=0; i<cookie_Navi.length; i=i+1)                     				/* L'index "i" va parcourir tous les cookies préparée dans les instructions précédentes */
+{
+while (cookie_Navi [i].charAt(0)===" ")										/* Supprime les espaces inutiles dans les cookies (il modifie les COOKIES*/
+{cookie_Navi [i]=cookie_Navi [i].substring(1,cookie_Navi [i].length);
+}
+if (cookie_Navi[i].indexOf(name_Navi)===0) return cookie_Navi [i].substring(name_Navi.length,cookie_Navi [i].length);
+}
+return null;
+}
+
+function eraseCookie (name)
+{
+createCookie(name,"",-1);
+}
+
+
+
+
+
+
+
+
+
+/* Ci-dessous je lis les cookies créés pour conserver l'état du MENU (PLAN DU SITE) et remettre l'ASCENSEUR dans le même état que celui où on l'avait laissé */
+/* Ci-dessous je lis les cookies créés pour conserver l'état du MENU (PLAN DU SITE) et remettre l'ASCENSEUR dans le même état que celui où on l'avait laissé */
+/* Ci-dessous je lis les cookies créés pour conserver l'état du MENU (PLAN DU SITE) et remettre l'ASCENSEUR dans le même état que celui où on l'avait laissé */
+
+
+
+if (readCookie ("Valeur_Ascenseur_Navi"))
+{                           /* On regarde si une valeur d'ascenseur est stockée dans un cookie */
+																		/* Si la valeur est stockée dans le cookie alors, on va récupérer sa valeur retournée par la fonction readCookie
+																		 *  Ensuite, on va l'appliquer à l'Ascenseur actuellement en place dans le chargement de la page */
+   var menu_Navi = document.getElementsByClassName("menu_Navi")[0]; 	/* On récupère la division qui contient le menu */
+   var valeur_Ascenseur_Navi = readCookie("Valeur_Ascenseur_Navi"); 	/* On récupère la valeur stockée dans le cookie  */
+   menu_Navi.scrollTop = valeur_Ascenseur_Navi;                     	/* .scrollTop fait référence à la position en pixels de l'ascenseur
+																		On appelle donc menu_Navi.scrollTop afin de récupérer la valeur en pixels de l'ascenseur et on peut ainsi la modifier*/
+}
+
+
+function fonctionRecurrente_Navi() {                              		/* Ceci est une fonction qui va éxecuter les lignes suivantes à chaque fois qu'elle sera appelée*/
+   var menu_Navi = document.getElementsByClassName("menu_Navi")[0]; 	/* On récupère la division qui contient le menu */
+   createCookie ("Valeur_Ascenseur_Navi",menu_Navi.scrollTop);       	/* On créée un cookie avec le nom "Valeur_Ascenseur_Navi" et la valeur de l'ascenseur menu_Navi.scrollTop*/
+}
+
+setInterval(fonctionRecurrente_Navi, 1000); 							/*Appelle la fonction fonctionRecurrente_Navi toutes les 1000ms (1s) */
+
+var MenuStatus = false;
+function showMenu(){
+	document.getElementsByClassName("menu_Navi")[0].style.display = MenuStatus ? "none" :"block";
+	document.getElementsByClassName("barre1")[0].style.top=MenuStatus ? '7px' : '26px';
+	document.getElementsByClassName("barre1")[0].style.transform=MenuStatus ? 'rotate(0deg)':'rotate(45deg)';
+	document.getElementsByClassName("barre2")[0].style.top=MenuStatus ? '26px' : '26px';
+	document.getElementsByClassName("barre2")[0].style.transform=MenuStatus ? 'rotate(0deg)':'rotate(45deg)';
+	document.getElementsByClassName("barre3")[0].style.top=MenuStatus ? '45px' : '26px';
+	document.getElementsByClassName("barre3")[0].style.transform=MenuStatus ? 'rotate(0deg)':'rotate(-45deg)';
+	MenuStatus = !MenuStatus;
+}
+var previousVal = 0;
+setInterval(() =>{
+	if (window.innerWidth > 1000 &&  previousVal <= 1000) {
+		if (MenuStatus) {
+			showMenu();
+		}
+		document.getElementsByClassName("menu_Navi")[0].style.display = "block";
+	}else if (window.innerWidth < 1000 && previousVal >= 1000){
+		document.getElementsByClassName("menu_Navi")[0].style.display = "none";
+	}
+	previousVal = window.innerWidth;
+}, 100);
+

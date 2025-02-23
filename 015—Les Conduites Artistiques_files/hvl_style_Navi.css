@@ -1,0 +1,797 @@
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TABLES 
+*/
+
+
+
+
+
+/*  On ajoute une classe table pour formatter TOUTES les pages du site (en trois colonnes) 
+		un padding de 0px à partir du haut (pas de bordure en haut de la table
+		un padding de 50px sur les bords (pour que le texte ne "colle" pas au bord de la table
+*/
+.padding
+{
+padding: 0px 50px;
+}
+
+
+
+
+
+/*  On ajoute une première colonne (à gauche) de la table qui est définie en "classe table". on y superposera le PLAN DE SITE 
+		une taille minimum de 250 px
+		une taille variable au-delà de 250 px
+*/
+.largeur_colonne_01
+{
+min-width: 250px;
+width: 25%
+}
+
+
+
+
+
+/*  On ajoute une deuxième colonne (au milieu de la table qui est définie en "classe table". on logera le CONTENU de la page 
+		une taille de 60%, pour laisser un blanc à droite
+*/
+.largeur_colonne_02
+{
+width: 50%
+}
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo BANDEAU 
+*/
+
+
+
+
+
+.bandeau_titre_conf
+{
+		/* paramètres du rectangle */
+	position: relative;
+	width: 100%;
+	background: #0000FF;
+	text-align: center;
+	padding:20px 0px;
+		/* paramètres du texte */
+	color: #FFFFFF;
+	font-size: 16x;
+	font-family: verdana;
+	text-decoration: none;
+	line-height: 15px;
+		/* font-weight: bold; ligne supprimée */
+	letter-spacing: 2px;
+}
+
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES BACKGROUND 
+*/
+
+
+
+
+
+/*  On ajoute une couleur BACKGROUND pour les pavés des termes du GLOSSAIRE 
+		
+*/
+.couleur_01
+{
+	background-color: #FEFFD4;
+}
+
+
+
+
+
+/*  On ajoute un couleur BACKGROUND pour les pavés des termes du GLOSSAIRE 
+		
+*/
+.couleur_02
+{
+	background-color: #FFFF99;
+}
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES
+	Les styles de TEXTES sont rangés par taille décroissante
+*/
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 20 px
+	
+*/
+
+ .txt_Navi_01
+{
+ color: #252525;
+ font-size: 20px;
+ font-family: verdana;
+ text-decoration: none;
+ font-style: italic;
+ text-align: center;
+ margin: 20px;
+}
+
+
+
+
+
+.hvl_bis
+{
+	color: #FFFFFF;
+	font-size: 20px;
+	font-family: Arial;
+	text-decoration: none;
+	letter-spacing: 7px;
+	padding:50px 0px;
+}
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 14 px
+	
+*/
+
+
+/*  C'est le format de la quasi totalité des textes du site ANTHROPOGENIE (Celui des 30 chapitres d'ANTHROPOGENIE) 
+	ATTENTION ce texte est INDENTE
+*/
+.txt
+{
+ color: #252525;
+ font-size: 14px;
+ font-family: verdana;
+ text-decoration: none;
+ text-align: justify;
+	
+ text-indent: 50px;
+}
+
+
+
+
+
+
+/* C'est le format de la quasi totalité des textes du site ANTHROPOGENIE (Celui des 30 chapitres d'ANTHROPOGENIE) *** en ANGLAIS *** (rouge bordeaux)
+	ATTENTION ce texte est INDENTE
+*/
+.txt_en
+{
+ color: #CC3333;
+ font-size: 14px;
+ font-family: verdana;
+ text-decoration: none;
+	
+ text-indent: 50px;
+}
+
+
+
+
+/*  C'est le format "txt" mais NON-INDENTE 
+	
+*/
+.txt_ni
+{
+ color: #252525;
+ font-size: 14px;
+ font-family: verdana;
+ text-decoration: none;
+ text-align: justify;
+ 
+  text-indent: 0px;
+}
+
+
+
+
+/*  C'est le format "txt" mais NON-INDENTE *** en ANGLAIS *** (rouge bordeaux)
+	
+*/
+.txt_ni_en
+{
+ color: #CC3333;
+ font-size: 14px;
+ font-family: verdana;
+ text-decoration: none;
+}
+
+
+
+
+
+ .txt1
+{
+ color: #252525;
+ font-size: 14px;
+ font-family: verdana;
+ text-decoration: none;
+ font-style: italic;
+}
+
+
+
+
+.txt_terme /* Pour les termes du Glossaire */
+{
+	color: #0000FF;
+	font-size: 16px;
+	font-family: Arial;
+	text-decoration: none;
+	line-height: 16px;
+/* 	font-weight: bold;   */
+}
+
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 13 px
+	
+*/
+
+
+.txt_accueil /* Pour les textes des pages accueil en FRANCAIS */
+{
+	color: #333333;
+	font-size: 13px;
+	font-family: Arial;
+	text-decoration: none;
+	line-height: 16px;
+}
+
+
+
+
+
+/* Pour les textes du main menu en anglais
+
+ */
+   .txtmain
+{
+	color: #CC3333;
+	font-size: 13px;
+	font-family: verdana;
+	text-decoration: none;
+}
+
+
+
+/*  Imitation des textes de liens 
+	
+*/
+.txt_13
+{
+ color: #404040;
+ font-size: 13px;
+ font-family: verdana;
+ text-decoration: none;
+ text-align: justify;
+	
+ text-indent: 0px;
+}
+
+
+   .txt_goto_version
+{
+	color: #0000FF;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: verdana;
+	text-decoration: none;
+}
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 12 px
+	
+*/
+
+.txttable1
+ {
+ color: #252525;
+ font-size: 12px;
+ font-family: verdana;
+ text-decoration: none;
+ line-height: 24px;
+ }
+
+
+
+
+
+.txttable
+ {
+ color: #252525;
+ font-size: 12px;
+ font-family: verdana;
+ text-decoration: none;
+ line-height: 18px;
+ }
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 11 px
+	
+*/
+
+
+.renvoi
+ {
+ color: #660099;
+ font-size: 11px;
+ font-family: verdana;
+ text-decoration: none;
+ }
+ 
+ 
+ 
+ 
+
+ .txt2
+{
+ color: #252525;
+ font-size: 11px;
+ font-family: verdana;
+ text-decoration: none;
+}
+
+
+
+
+
+.txtbis
+ {
+ color: #252525;
+ font-size: 11px;
+ font-family: verdana;
+ text-decoration: none;
+ }
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 10 px
+	
+*/
+
+
+.txtter
+ {
+ color: #252525;
+ font-size: 10px;
+ font-family: verdana;
+ text-decoration: none;
+ }
+
+
+
+
+
+.legende
+ {
+ color: #505050;
+ font-size: 10px;
+ font-family: verdana;
+ text-decoration: none;
+ font-style: italic;
+ }
+
+
+
+
+
+  .txtquad2
+{
+	color: #252525;
+	font-size: 10px;
+	font-family: verdana;
+	text-decoration: none;
+}
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 09 px
+	
+*/
+
+
+  .txtquad
+{
+	color: #252525;
+	font-size: 9px;
+	font-family: verdana;
+	text-decoration: none;
+}
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DE 06 px
+	
+*/
+
+
+ .inter
+ {
+ color: #252525;
+ font-size: 6px;
+ font-family: verdana;
+ text-decoration: none;
+ }
+
+
+
+
+
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES
+	Les styles de TITRES sont rangés par taille décroissante
+*/
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 92 px
+	
+*/
+
+
+.titrecon
+{
+ color: #000000;
+ font-size: 92px;
+ font-family: times;
+ text-decoration: none;
+} 
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 40 px
+	
+*/
+
+.hvl
+{
+	color: #808080;
+	font-size: 40px;
+	font-family: Arial;
+	text-decoration: none;
+	letter-spacing: 15px;
+}
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 32 px
+	
+*/
+
+.titre
+{
+ color: #808080;
+ font-size: 32px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+
+
+
+.titre_en
+{
+ color: #CC3333;
+ font-size: 32px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 28 px
+	
+*/
+
+.titre2
+{
+ color: #707070;
+ font-size: 28px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 24 px
+	
+*/
+
+
+.titre3
+{
+ color: #707070;
+ font-size: 24px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 22 px
+	
+*/
+
+
+.titre_bleu /* Pour le titre du mode d'emploi du moteur de recherche (en français) */
+{
+	color: #5780C1;
+	font-size: 22px;
+	font-family: Verdana;
+	text-decoration: none;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+
+
+
+.titre_orange
+ {
+	color: #FF8000;
+	font-size: 22px;
+	font-family: Verdana;
+	text-decoration: none;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+
+
+
+.titre_colloque
+{
+	color: #666666;
+	font-size: 22px;
+	font-family: Verdana;
+	text-decoration: none;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+
+
+
+
+.titrebis
+{
+ color: #303030;
+ font-size: 22px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 20 px
+	
+*/
+
+
+.titre_glossaire
+{
+	color: #FF0040;
+	font-size: 20px;
+	font-family: Verdana;
+	text-decoration: none;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 18 px
+	
+*/
+
+
+ .titreter
+{
+ color: #303030;
+ font-size: 18px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 17 px
+	
+*/
+
+
+.titrelivre
+ {
+ color: #252525;
+ font-size: 17px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+ 
+  text-indent: 0px;
+ }
+
+
+
+
+
+ .titre2bis
+{
+ color: #707070;
+ font-size: 17px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 16 px
+	
+*/
+
+
+.s_titrechap
+ {
+ color: #404040;
+ font-size: 16px;
+ font-family: verdana;
+ text-decoration: none;
+ }
+
+
+
+
+
+ .titre3bis
+{
+ color: #707070;
+ font-size: 16px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+}
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 16 px
+	
+*/
+
+
+
+.titrechapbis
+ {
+ color: #252525;
+ font-size: 15px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+ }
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 14 px
+	
+*/
+
+ .titre2bis2 
+ {
+ 	color: #707070;
+ 	font-size: 14px;
+ 	font-family: verdana;
+ 	text-decoration: none;
+ 	font-weight: bold;
+ 	letter-spacing: 10px;
+ }
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TITRES DE 13 px
+	
+*/
+
+
+ .titrechap
+ {
+ color: #252525;
+ font-size: 13px;
+ font-family: verdana;
+ text-decoration: none;
+ font-weight: bold;
+ }
+
+
+
+
+
+.paralivre
+ {
+ color: #252525;
+ font-size: 13px;
+ font-family: verdana;
+ text-decoration: none;
+ margin: 0 0 0 30px;
+ }
+
+
+
+
+
+/*  ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo LES TEXTES DES LIENS
+	
+*/
+
+
+
+
+
+ a /* Pour le style par défaut du texte des liens spécifiés dans des balises <a>
+	  On peut modifier ce style, dans la balise <a> en y spécifiant une classe de texte différente)*/
+{
+ color: #404040;
+ font-size: 13px;
+ font-family: verdana;
+ text-decoration: none;
+}
+
+
+
+
+
+ a:hover  /* Pour le style par défaut du texte des liens spécifiés dans des balises <a> lorsqu'on le survole (changement de couleur)
+			   On peut modifier ce style, dans la balise <a> en y spécifiant une classe de texte différente)*/
+{
+ color: #9900CC;
+ text-decoration: none;
+}
+
+
